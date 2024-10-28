@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a{
+    @apply ease-in-out hover:border-b-4 border-[#e71d36]
+}
+.nav a {
+    @apply ease-out hover:bg-primary w-full px-4 h-12 hover:text-white font-medium
+}
+.logo img{
+    @apply h-[82px] w-[162px]
+}
+.div-cible div{
+    @apply flex items-center gap-5 my-2 text-lg
+}
+.links a{
+    @apply  hover:border-b-4 border-primary focus:border-b-4
+}
+
+.icons img{
+    @apply w-[44.17px] h-[44.17px] 
+}
