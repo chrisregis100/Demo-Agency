@@ -21,3 +21,7 @@ nav a{
 .icons img{
     @apply w-[44.17px] h-[44.17px] 
 }
+
+.text{
+    line-height: 50px;
+}

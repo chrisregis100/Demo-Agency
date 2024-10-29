@@ -1,51 +1,45 @@
 import { Button } from "antd";
 import PlayIcon from "./assets/icons/playIcon";
 import ArrowRigth from "./assets/icons/ArrowRigth";
-import MenuIcon from "./assets/icons/MenuIcon";
-import { useState } from "react";
+
 import forbesIcon from "../public/forbes.png"
+import Header from "./components/Header";
+import imageHero from '../public/image-hero.png'
+import netflix from '../public/netflix.png'
+import sej from "../public/esj-logo.png"
+import amazon from "../public/amazon.png"
+import enterprise from "../public/entre-logo.png"
+import projet1 from "../public/project1.png"
+import projet2 from "../public/project2.png"
+import projet3 from "../public/project3.png"
+import projet4 from "../public/project4.png"
+import projet5 from "../public/project5.png"
+import projet6 from "../public/project6.png"
+import cible from "../public/cible.png"
+import icon1 from '../public/div-icon1.png'
+import icon2 from '../public/div-icon2.png'
+import blog1 from '../public/blog1.png'
+import blog2 from '../public/blog2.png'
+import blog3 from '../public/blog3.png'
+import blog4 from '../public/blog4.png'
+import  facebook from '../public/facebook-icon.png'
+import linkedin from '../public/linkedin-icon.png'
+import twitter from '../public/tweeter-icon.png'
+import youtube from '../public/youtubbe-icon.png'
+import ImageFooter from '../public/image-footer1.png'
+import ImageFooter2 from '../public/image-footer2.png'
+
+
+
+
+
 
 export default function App() {
-  const [open, setOpen] = useState(false);
-
-  function displayMenu() {
-    console.log("boutton cliqué");
-
-    setOpen(!open);
-  }
+  
   return (
     <>
       <section className="  relative bg-[#fdfffc] ">
-        <header className="flex justify-between items-center lg:px-[250px] px-4">
-          <div className=" text-[#e71d36] text-[65px] font-bold ">DeMo.</div>
-          <nav className="md:flex items-center text-lg gap-4 hidden">
-            <a href="#services">Services</a>
-            <a href="#packages">Packages</a>
-            <a href="">Who we are</a>
-            <a href="#Portfolio">Our Portfolio</a>
-            <a href="">About Us</a>
-          </nav>
-          <Button className="bg-primary md:flex hidden text-center hero rounded-lg text-white text-lg font-medium font-['Inter']">
-            Contacts
-          </Button>
-          <span
-            className="md:hidden  hover:translate-x-2 focus:border-primary rounded-lg"
-            onClick={displayMenu}
-          >
-            <MenuIcon />
-          </span>
-          <>
-            {!open && (
-              <nav className=" md:hidden nav flex flex-col h-[250px] w-[200px] rounded-lg z-0 justify-around absolute top-16 right-10 transition-all text-lg gap-2 bg-green/35 ">
-                <a href="#services">Services</a>
-                <a href="#packages">Packages</a>
-                <a href="">Who we are</a>
-                <a href="">Our Portfolio</a>
-                <a href="">About Us</a>
-              </nav>
-            )}
-          </>
-        </header>
+    <Header/>
         <main>
           <section className="flex px-4 lg:px-[250px] w-full items-center justify-between bg-gradient-to-r from-[#ffe5e5] via-[#f5fffe] to-[#fff4e5]">
             <div className="flex flex-col gap-4 lg:gap-10 ">
@@ -78,27 +72,27 @@ export default function App() {
             </div>
             <div>
               <img
-                src="/public/image-hero.png"
+                src={imageHero}
                 className="lg:w-[494.47px] md:w-[300px] md:h-[450px] lg:h-[691px]"
                 alt="image fond"
               />
             </div>
           </section>
           <section className="mt-10 px-5 lg:mx-[250px] " id="services">
-            <h1 className="md:text-[45px] text-2xl font-bold text-center">
+            <h1 className="md:text-[45px] mb-4 text-2xl font-bold text-center">
               Our Work featured on
             </h1>
-            <div className="logo md:flex  grid grid-cols-2 items-center shadow-lg  mt-5 justify-between gap-2">
+            <div className="logo md:flex  grid grid-cols-2 items-center shadow-lg  mt-8 justify-between gap-2">
               <img src={forbesIcon} alt="image-forbes" />
-              <img src="../public/netflix.png" alt="netflix logo" />
-              <img src="../public/esj-logo.png" alt="esj-logo" />
-              <img src="../public/amazon.png" alt="amazon-logo" />
-              <img src="../public/entre-logo.png" alt="entre-magazine-logo" />
+              <img src={netflix} alt="netflix logo" />
+              <img src={sej} alt="esj-logo" />
+              <img src={amazon} alt="amazon-logo" />
+              <img src={enterprise} alt="entre-magazine-logo" />
             </div>
           </section>
           <section className="lg:flex px-6 mx-auto lg:mx-[250px]  mt-16">
             <section className="mt-10 flex flex-col justify-around lg:w-1/2 mx-auto md:w-3/4">
-              <h1 className="md:text-[35px] text-xl font-bold">
+              <h1 className="md:text-[35px] text-xl font-bold text">
                 HOW PAGETRAFIC CREATES HYPER BUSINESS GROWTH
               </h1>
               <p className="text-lg my-4">
@@ -109,7 +103,7 @@ export default function App() {
               <div className="flex flex-col div-cible mt-4">
                 <div>
                   <img
-                    src="../public/cible.png"
+                    src={cible}
                     alt="cible"
                     className="cible"
                   />
@@ -117,7 +111,7 @@ export default function App() {
                 </div>
                 <div>
                   <img
-                    src="../public/cible.png"
+                    src={cible}
                     alt="cible"
                     className="cible"
                   />
@@ -125,7 +119,7 @@ export default function App() {
                 </div>
                 <div>
                   <img
-                    src="../public/cible.png"
+                    src={cible}
                     alt="cible"
                     className="cible"
                   />
@@ -133,7 +127,7 @@ export default function App() {
                 </div>
                 <div>
                   <img
-                    src="../public/cible.png"
+                    src={cible}
                     alt="cible"
                     className="cible"
                   />
@@ -141,7 +135,7 @@ export default function App() {
                 </div>
                 <div>
                   <img
-                    src="../public/cible.png"
+                    src={cible}
                     alt="cible"
                     className="cible"
                   />
@@ -170,7 +164,7 @@ export default function App() {
               <div className="flex flex-col gap-5">
                 <div className="h-[330px] w-[270px] flex flex-col gap-4 border px-10 py-5 border-primary rounded-[25px] ">
                   <div className="w-[100px] h-[100px] bg-primary/25 px-4 py-4 rounded-lg ">
-                    <img src="../public/div-icon1.png" alt="icon1" />
+                    <img src={icon1} alt="icon1" />
                   </div>
                   <h1 className="text-[26px] font-semibold ">I Want Leads</h1>
                   <p className="text-lg">
@@ -182,7 +176,7 @@ export default function App() {
                 </div>
                 <div className="h-[330px] w-[270px] flex flex-col gap-4 border px-10 py-5 border-green rounded-[25px] ">
                   <div className="w-[100px] h-[100px] bg-green/25 px-4 py-4 rounded-lg ">
-                    <img src="../public/div-icon2.png" alt="icon1" />
+                    <img src={icon2} alt="icon1" />
                   </div>
                   <h1 className="text-[26px] font-semibold ">I Want Leads</h1>
                   <p className="text-lg">
@@ -197,7 +191,7 @@ export default function App() {
               <div className="flex flex-col gap-5 lg:mt-12">
                 <div className="h-[330px] w-[270px] flex flex-col gap-4 border px-10 py-5 border-green rounded-[25px] ">
                   <div className="w-[100px] h-[100px] bg-green/25 px-4 py-4 rounded-lg ">
-                    <img src="../public/div-icon2.png" alt="icon1" />
+                    <img src={icon2} alt="icon1" />
                   </div>
                   <h1 className="text-[26px] font-semibold ">I Want Leads</h1>
                   <p className="text-lg">
@@ -209,7 +203,7 @@ export default function App() {
                 </div>
                 <div className="h-[330px] w-[270px] flex flex-col gap-4 border px-10 py-5 border-primary rounded-[25px] ">
                   <div className="w-[100px] h-[100px] bg-primary/25 px-4 py-4 rounded-lg ">
-                    <img src="../public/div-icon1.png" alt="icon1" />
+                    <img src={icon1} alt="icon1" />
                   </div>
                   <h1 className="text-[26px] font-semibold ">I Want Leads</h1>
                   <p className="text-lg">
@@ -234,12 +228,12 @@ export default function App() {
               <a href="link">UI/UX</a>
             </div>
             <div className="grid md:grid-cols-3 grid-cols-1 gap-4  projects">
-              <img src="../public/project1.png" alt="projet 1" />
-              <img src="../public/project2.png" alt="projet 2" />
-              <img src="../public/project3.png" alt="projet 3" />
-              <img src="../public/project4.png" alt="projet 4" />
-              <img src="../public/project5.png" alt="projet 5" />
-              <img src="../public/project6.png" alt="projet 6" />
+              <img src={projet1} alt="projet 1" />
+              <img src={projet2} alt="projet 2" />
+              <img src={projet3} alt="projet 3" />
+              <img src={projet4} alt="projet 4" />
+              <img src={projet5} alt="projet 5" />
+              <img src={projet6} alt="projet 6" />
             </div>
             <Button className="bg-green h-12 w-32 mt-4 text-white">
               Explore Now
@@ -252,7 +246,7 @@ export default function App() {
             <div className="mt-8 lg:grid grid-cols-2 flex flex-col items-center gap-10">
               <div className="md:w-[559px] flex items-center gap-3 border border-primary rounded-xl ">
                 <img
-                  src="../public/blog1.png"
+                  src={blog1}
                   alt=""
                   className="h-[249px] w-[201px] "
                 />
@@ -270,7 +264,7 @@ export default function App() {
               </div>
               <div className="md:w-[559px] flex items-center gap-3 border border-green rounded-xl ">
                 <img
-                  src="../public/blog2.png"
+                  src={blog2}
                   alt=""
                   className="h-[249px] w-[201px] "
                 />
@@ -288,7 +282,7 @@ export default function App() {
               </div>
               <div className="md:w-[559px] flex items-center gap-3 border lg:border-green border-primary rounded-xl ">
                 <img
-                  src="../public/blog3.png"
+                  src={blog3}
                   alt=""
                   className="h-[249px] w-[201px] "
                 />
@@ -306,7 +300,7 @@ export default function App() {
               </div>
               <div className="md:w-[559px] flex items-center gap-3 border lg:border-primary border-green rounded-xl ">
                 <img
-                  src="../public/blog4.png"
+                  src={blog4}
                   alt=""
                   className="h-[249px] w-[201px] "
                 />
@@ -336,16 +330,16 @@ export default function App() {
             </p>
             <div className="flex icons gap-4 mt-10">
               <a href="facebook">
-                <img src="../public/facebook-icon.png" alt="icon-facebook" />
+                <img src={facebook} alt="icon-facebook" />
               </a>
               <a href="linkedin">
-                <img src="../public/linkedin-icon.png" alt="linkedin-icon" />
+                <img src={linkedin} alt="linkedin-icon" />
               </a>
               <a href="twitter">
-                <img src="../public/tweeter-icon.png" alt="tweeter-icon" />
+                <img src={twitter} alt="tweeter-icon" />
               </a>
               <a href="youtube">
-                <img src="../public/youtubbe-icon.png" alt="youtube-icon" />
+                <img src={youtube} alt="youtube-icon" />
               </a>
             </div>
           </div>
@@ -363,7 +357,7 @@ export default function App() {
             <h1 className="text-green font-bold text-2xl">LATEST NEWS</h1>
             <div className="w-[315px] h-[100px] flex  ">
               <img
-                src="../public/image-footer1.png"
+                src={ImageFooter}
                 className="h-[100px] w-[100px] rounded-lg  "
                 alt="image-footer"
               />
@@ -378,7 +372,7 @@ export default function App() {
             </div>
             <div className="w-[315px] h-[100px] flex  ">
               <img
-                src="../public/image-footer2.png"
+                src={ImageFooter2}
                 className="h-[100px] w-[100px] rounded-lg  "
                 alt="image-footer"
               />
