@@ -3,6 +3,7 @@ import PlayIcon from "./assets/icons/playIcon";
 import ArrowRigth from "./assets/icons/ArrowRigth";
 import MenuIcon from "./assets/icons/MenuIcon";
 import { useState } from "react";
+import forbesIcon from "../public/forbes.png"
 
 export default function App() {
   const [open, setOpen] = useState(false);
@@ -88,7 +89,7 @@ export default function App() {
               Our Work featured on
             </h1>
             <div className="logo md:flex  grid grid-cols-2 items-center shadow-lg  mt-5 justify-between gap-2">
-              <img src="../public/forbes.png" alt="image-forbes" />
+              <img src={forbesIcon} alt="image-forbes" />
               <img src="../public/netflix.png" alt="netflix logo" />
               <img src="../public/esj-logo.png" alt="esj-logo" />
               <img src="../public/amazon.png" alt="amazon-logo" />
