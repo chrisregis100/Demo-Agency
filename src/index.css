@@ -9,10 +9,13 @@ nav a{
     @apply ease-out hover:bg-primary w-full px-4 h-12 hover:text-white font-medium
 }
 .logo img{
-    @apply h-[82px] w-[162px]
+    @apply lg:h-[82px] lg:w-[162px] md:w-[100px] w-[162px]
 }
 .div-cible div{
-    @apply flex items-center gap-5 my-2 text-lg
+    @apply flex items-center gap-5 my-2 text-lg 
+}
+.lead{
+    @apply xl:h-[330px] xl:w-[270px] lg:h-[300px] w-[250px] flex flex-col gap-4 border px-10  py-5
 }
 .links a{
     @apply  hover:border-b-4 border-primary focus:border-b-4
